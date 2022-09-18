@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+body {
+    background: #f7f7f7;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Start */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+header .name {
+    margin-left: 8rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    color: #5e5e5e;
+}
+
+header .name:hover {
+    color: #890c0ca9;
+}
+
+header .fa-react:hover {
+    color: #091adba9;
+}
+
+.nav {
+    margin-right: 6rem;
+}
+
+.nav ul li {
+    margin: 1rem;
+    display: inline;
+}
+
+.nav ul li a {
+    color: #454141;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #011aff;
+    border-bottom: 2.5px solid #011aff;
+    padding-bottom: 0.2rem;
+}
+
+header a i {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: 0.2rem;
+}
+
+/* Header End */
+
+
+
+
+
+/* Home Page start */
+
+.image {
+    background-image: url("https://media.istockphoto.com/vectors/abstract-white-gray-color-background-with-round-liquid-shape-vector-vector-id1253186607?k=20&m=1253186607&s=612x612&w=0&h=nfvx5Ji1gxHc8rHZBOMYrP9Z5WazlzvyydFV8NiKPJQ=");
+    height: 100vh;
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 13rem;
+    left: 6rem;
+}
+
+.content h2 {
+    font-size: 3.5rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.content h2 span {
+    color: #515ab0;
+}
+
+p {
+    margin-top: 1.2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+p span {
+    color: #c91622b8;
+}
+
+.content a {
+    padding: 0.7rem 2rem;
+    width: 3rem;
+    background-color: #010f8b;
+    border-radius: 3rem;
+    box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+}
+
+a span {
+    color: #fff;
+    margin-right: 0.2rem;
+}
+
+a i {
+    color: #fff;
+}
+
+.btn span:hover {
+    margin-right: 0.6rem;
+}
+
+.socials {
+    margin-top: 3rem;
+}
+
+.socials-icons ul li {
+    border-radius: 50rem;
+    display: inline-block;
+}
+
+.socials-icons a {
+    font-size: 1.5rem;
+    background-color: #000;
+    margin-right: 0.5rem;
+}
+
+
+.hero {
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+}
+
+.hero img {
+    height: 26rem;
+    border-radius: 50rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateX(10px);
+}
+
+/* Home Page end */
+
+
+
+/* About section start */
+
+.about {
+    height: 100vh;
+}
+
+.about h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    font-size: 2.5rem;
+}
+
+.about h1 i {
+    position: relative;
+    top: 1rem;
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.about h1 span {
+    margin-left: 0.5rem;
+    color: #ac07a1c7;
+}
+
+.row {
+    display: inline-flex;
+}
+
+#image img {
+    height: 27rem;
+    position: relative;
+    top: 8rem;
+    left: 18rem;
+    border-radius: 2rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#image img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform: translateX(10px);
+
+}
+
+#about .bio {
+    position: relative;
+    top: 10rem;
+    left: 30rem;
+    width: 35rem;
+}
+
+.bio h2 {
+    font-size: 2rem;
+}
+
+.bio span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bio p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-family: "Nunito";
+    font-weight: 600;
+    text-transform: none;
+}
+
+.box-container {
+    position: relative;
+    top: 23rem;
+    right: 5rem;
+}
+
+.box p {
+    font-size: 1rem;
+    margin: 0.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.box p span {
+    color: #011aff;
+}
+
+/* About section end */
+
+
+
+
+/* Skills section start */
+
+.skills {
+    height: 100vh;
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
+}
+
+.skills h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.skills h1 span {
+    margin-left: 0.7rem;
+    color: #fff707;
+}
+
+.skills h1 i {
+    position: relative;
+    top: 0.7rem;
+    margin-right: 0.9rem;
+}
+
+.skills .container {
+    background: rgba(0, 0, 22, 0.4);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.skills .container .row {
+    background-color: #000;
+    border-radius: 0.8rem;
+    width: 12rem;
+    height: 12rem;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.skills .container .row:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills .container .bar .info {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills .container .info img {
+    height: 5rem;
+    margin: 0.5rem;
+}
+
+.skills .container .info h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.6rem;
+}
+
+/* Skills section end */
+
+
+/* Education section start */
+
+.education {
+    height: 100vh;
+    background-color: #e5ecfb;
+}
+
+.education h1 {
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.education h1 span {
+    margin-left: 0.8rem;
+    color: #be0dea;
+}
+
+.education i {
+    position: relative;
+    top: 0.7rem;
+    margin-right: 0.8rem;
+}
+
+.education .education-container {
+    background: #fff;
+    color: #fff;
+    border-radius: 0.2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+    height: 10rem;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.education-container .img {
+    display: inline-flex;
+    height: 10rem;
+    width: 20rem;
+}
+
+.education-container img {
+    height: 10rem;
+    width: 20rem;
+}
+
+.details {
+    position: relative;
+    top: -9.5rem;
+    left: 23rem;
+    display: block;
+    width: fit-content;
+}
+
+.details .course {
+    color: #010f8b;
+    font-size: 1.5rem;
+}
+
+.details .cllg {
+    margin-top: 1rem;
+    color: #000;
+}
+
+.details h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #039b00fb;
+}
+
+.education .education-container2 {
+    background: #fff;
+    color: #fff;
+    border-radius: 0.2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    height: 10rem;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.education-container2 .img {
+    display: inline-flex;
+    height: 10rem;
+    width: 20rem;
+}
+
+.education-container2 img {
+    height: 10rem;
+    width: 20rem;
+}
+
+.education-container:hover,
+.education-container2:hover {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Education section end */
+
+
+
+/* Project section start */
+
+.project {
+    height: 100vh;
+    background-color: #01062d;
+}
+
+.project h1 {
+    color: #ffb302;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.project h1 i {
+    color: #fff;
+    position: relative;
+    top: 0.7rem;
+    margin-right: 0.8rem;
+}
+
+/* Project section end */
+
+
+
+
+
+/* contact section start */
+
+.contact {
+    height: 100vh;
+    background-color: #e5ecfb;
+}
+
+.contact h1{
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.contact h1 span {
+    margin-left: 0.5rem;
+    color: #d20cec;
+}
+
+
+.contact h1 i {
+    position: relative;
+    top: 0.7rem;
+    margin-right: 0.8rem;
+}
