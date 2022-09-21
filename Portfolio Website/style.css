@@ -44,7 +44,7 @@ header .name {
 }
 
 header .name:hover {
-    color: #890c0ca9;
+    color: #dbcd09a9;
 }
 
 header .fa-react:hover {
@@ -156,6 +156,10 @@ a i {
     margin-right: 0.5rem;
 }
 
+.socials-icons a:hover {
+    background-color: #010f8b;
+}
+
 
 .hero {
     position: absolute;
@@ -182,6 +186,7 @@ a i {
 
 .about {
     height: 100vh;
+    background-color: rgba(198, 196, 196, 0.37);
 }
 
 .about h1 {
@@ -454,7 +459,7 @@ a i {
 
 .project {
     height: 100vh;
-    background-color: #01062d;
+    background: linear-gradient(to bottom, #000031, #00002c);
 }
 
 .project h1 {
@@ -472,6 +477,41 @@ a i {
     top: 0.7rem;
     margin-right: 0.8rem;
 }
+
+.project .project-container {
+    color: #fff;
+    border-radius: 1rem;
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+    margin-top: 6.5rem;
+}
+
+.project-container #box {
+    display: inline-block;
+    margin: 0rem 4rem 1rem 4rem;
+}
+
+#box .project-link img {
+    height: 13rem;
+    width: 20rem;
+    border: 1px solid #ffb302;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+#box .project-link img:hover {
+    border: 5px solid #00867a;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.project-name {
+    text-align: center;
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+
 
 /* Project section end */
 
@@ -531,9 +571,10 @@ a i {
     position: relative;
 }
 
- 
+
 .contact-container form {
     margin-left: 10rem;
+    margin-top: -1rem;
     height: auto;
     width: fit-content;
 }
@@ -541,15 +582,16 @@ a i {
 form input {
     width: 25rem;
     height: 3.3rem;
-    padding-left: 3rem;
+    padding-left: 3.5rem;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0.5rem;
     background-color: #0ba5d827;
-    margin-bottom: 1.5rem;
 }
 
+textarea::placeholder,
 input::placeholder {
     font-size: 1rem;
+    font-family: sans-serif;
 }
 
 form i {
@@ -557,20 +599,140 @@ form i {
     left: 1.3rem;
     top: 2.4rem;
     font-size: 1.3rem;
-    color: #000;
-}
-/*
-form .message i {
-    position: relative;
-    top: 2rem;
+    color: rgb(51, 51, 51);
 }
 
 form textarea {
-    width: 25rem;
-    height: 3.3rem;
-    padding-left: 2.9rem;
+    padding-left: 3.5rem;
+    padding-top: 0.8rem;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0.5rem;
     background-color: #0ba5d827;
-    margin-bottom: 1.5rem;
-} */
+}
+
+.submit button {
+    float: right;
+    width: 8rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #2506ad;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+}
+
+.submit button:hover {
+    background-color: #421cecf5;
+}
+
+.submit button i {
+    margin-left: 0.5rem;
+    position: inherit;
+    color: #fff;
+}
+
+/* contact section end */
+
+
+/* Footer section start */
+
+
+footer {
+    height: 45vh;
+    background-color: #000031;
+}
+
+footer .footer-container {
+    max-width: 1050px;
+    width: 100%;
+    border-radius: 1.5rem;
+    margin: auto;
+}
+
+footer .footer-container .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-content h1 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+.sub-content p i {
+    color: #ffb302;
+}
+
+.sub-content p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #fff;
+    width: 22rem;
+    margin-bottom: 0;
+}
+
+.sub-content .links {
+    margin-right: 10rem;
+}
+
+.sub-content .links li {
+    margin: 0.3rem;
+}
+
+.sub-content .links a {
+    color: #fff;
+}
+
+.sub-content .links i:hover,
+.sub-content .links a:hover {
+    color: #ffb302;
+}
+
+.line {
+    width: 75%;
+    height: 1px;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    background-color: rgba(118, 122, 161, 0.39);
+}
+
+.credit {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+.credit i {
+    color: #ff0202;
+}
+
+.credit a {
+    color: #ffb302;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #011274d8;
+}
