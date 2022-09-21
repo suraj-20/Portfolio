@@ -720,7 +720,10 @@ footer .footer-container .footer-content {
     color: #ffb302;
 }
 
+/* footer section end */
 
+
+/* scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
@@ -736,3 +739,5 @@ footer .footer-container .footer-content {
 ::-webkit-scrollbar-thumb {
     background: #011274d8;
 }
+
+/* scrollbar end */
