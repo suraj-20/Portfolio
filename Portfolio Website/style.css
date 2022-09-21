@@ -486,7 +486,7 @@ a i {
     background-color: #e5ecfb;
 }
 
-.contact h1{
+.contact h1 {
     position: relative;
     top: 5rem;
     display: flex;
@@ -505,3 +505,72 @@ a i {
     top: 0.7rem;
     margin-right: 0.8rem;
 }
+
+.contact-container {
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1.5rem;
+    margin: auto;
+    margin-top: 6rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-container .content-box {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 2rem;
+}
+
+.contact-container .content-box .image-box {
+    max-width: 100%;
+    margin-left: 4rem;
+}
+
+.contact-container .content-box .image-box img {
+    position: relative;
+}
+
+ 
+.contact-container form {
+    margin-left: 10rem;
+    height: auto;
+    width: fit-content;
+}
+
+form input {
+    width: 25rem;
+    height: 3.3rem;
+    padding-left: 3rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    background-color: #0ba5d827;
+    margin-bottom: 1.5rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+form i {
+    position: relative;
+    left: 1.3rem;
+    top: 2.4rem;
+    font-size: 1.3rem;
+    color: #000;
+}
+/*
+form .message i {
+    position: relative;
+    top: 2rem;
+}
+
+form textarea {
+    width: 25rem;
+    height: 3.3rem;
+    padding-left: 2.9rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    background-color: #0ba5d827;
+    margin-bottom: 1.5rem;
+} */
